@@ -3,62 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fana RK - Full Stack Web Developer</title>
+    <title>Fana RK - Full Stack Developer & AI Specialist</title>
     <!-- Include Tailwind CSS from CDN for styling -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="bg-white text-gray-800 antialiased">
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-    <nav class="bg-gray-900">
+    <nav class="bg-gray-900 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <a href="#" class="text-white text-lg font-semibold">Fana RK</a>
+                    <a href="#" class="text-white text-lg font-bold flex items-center">
+                        <i class="fas fa-code mr-2"></i>
+                        Fana RK
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#projects" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#skills" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="bg-gray-100 py-12 mb-8">
+    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-20 mb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 id="fana-rk" class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Fana RK</h1>
-            <p class="mt-2 text-base text-gray-600">Full Stack Web Developer</p>
+            <h1 class="text-4xl font-extrabold text-white sm:text-5xl">Fana Rakotoasimbola</h1>
+            <p class="mt-3 text-xl text-white">Full Stack Developer & AI Specialist</p>
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="https://github.com/fanama" target="_blank" class="text-white hover:text-gray-200">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/fanama/" target="_blank" class="text-white hover:text-gray-200">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="mailto:f.rakotoasimbola@gmail.com" class="text-white hover:text-gray-200">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <section class="mb-12">
-            <h2 class="text-xl font-semibold text-gray-900">About Me</h2>
-            <p class="text-gray-700 mt-4">
-                As a full-stack web developer, I have a passion for building scalable web applications and delightful user experiences. With expertise in both front-end and back-end technologies, I strive to bridge the gap between graphic design and technical implementation, ensuring that the work I create is not only aesthetically pleasing but also functionally robust.
-            </p>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+        <section id="about" class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">About Me</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-gray-700 mb-4">
+                    As a full-stack developer with over 5 years of experience, I specialize in building scalable web applications and AI-powered solutions.
+                    My expertise spans both front-end and back-end technologies, with a particular focus on large language models (LLMs) and AI integration.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    I have a strong background in computer science and have worked on various projects ranging from video analysis platforms to AI chatbot solutions.
+                    My passion lies in creating innovative solutions that bridge the gap between cutting-edge technology and practical business applications.
+                </p>
+                <p class="text-gray-700">
+                    When I'm not coding, you can find me teaching music, playing the alto saxophone, or exploring new technologies in the AI space.
+                </p>
+            </div>
         </section>
 
-        
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <section class="mb-12">
-            <h3 id="usefull-repo" class="text-xl font-semibold text-gray-900 border-b-2 border-gray-200 pb-2">Useful Repo</h3>
-            <ul class="mt-4">
-                <li class="mb-3"><a href="https://github.com/fanama/doc" class="text-blue-600 hover:text-blue-800 transition ease-in-out duration-150">https://github.com/fanama/doc</a></li>
-            </ul>
+        <section id="projects" class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Featured Projects</h2>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">LLM as a Service Platform</h3>
+                    <p class="text-gray-700 mb-4">Developed a platform to automate internal tasks using large language models, reducing workload for teams.</p>
+                    <a href="https://github.com/fanama" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+                        View on GitHub
+                        <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Video Analysis Platform</h3>
+                    <p class="text-gray-700 mb-4">Worked on a real-time video analysis platform for urban and private site monitoring.</p>
+                    <a href="https://github.com/fanama/XXII" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+                        View on GitHub
+                        <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">AI Chatbot with RAG</h3>
+                    <p class="text-gray-700 mb-4">Implemented a chatbot with retrieval-augmented generation for quick access to internal information.</p>
+                    <a href="https://github.com/fanama" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+                        View on GitHub
+                        <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h3 id="project-links" class="text-xl font-semibold text-gray-900 border-b-2 border-gray-200 pb-2">Project Links</h3>
-            <ul class="mt-4">
-                <li class="mb-3"><a href="https://github.com/fanama/deno-rest" class="text-blue-600 hover:text-blue-800 transition ease-in-out duration-150">deno</a></li>
-                <li class="mb-3"><a href="https://github.com/fanama/scripts" class="text-blue-600 hover:text-blue-800 transition ease-in-out duration-150">auto-template</a></li>
-                <li class="mb-3"><a href="https://github.com/fanama/XXII" class="text-blue-600 hover:text-blue-800 transition ease-in-out duration-150">example video service</a></li>
-                <li class="mb-3"><a href="https://github.com/fanama/RPG-API" class="text-blue-600 hover:text-blue-800 transition ease-in-out duration-150">go-react</a></li>
-            </ul>
+        <section id="skills" class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fab fa-react text-4xl text-blue-500 mb-2"></i>
+                    <h3 class="font-semibold text-gray-800">React</h3>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
+                    <h3 class="font-semibold text-gray-800">Node.js</h3>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fas fa-database text-4xl text-indigo-500 mb-2"></i>
+                    <h3 class="font-semibold text-gray-800">MongoDB</h3>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fab fa-python text-4xl text-yellow-500 mb-2"></i>
+                    <h3 class="font-semibold text-gray-800">Python</h3>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fab fa-golang text-4xl text-blue-600 mb-2"></i>
+                    <h3 class="font-semibold text-gray-800">Golang</h3>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fas fa-brain text-4xl text-purple-500 mb-2"></i>
+                    <h3 class="font-semibold text-gray-800">AI/ML</h3>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fas fa-cloud text-4xl text-blue-400 mb-2"></i>
+                    <h3 class="font-semibold text-gray-800">GCP</h3>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fas fa-code text-4xl text-gray-500 mb-2"></i>
+                    <h3 class="font-semibold text-gray-800">Full Stack</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-gray-700 mb-4">
+                    I'm always open to interesting opportunities and collaborations. Feel free to reach out!
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="mailto:f.rakotoasimbola@gmail.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-md flex items-center justify-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/fanama/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md flex items-center justify-center">
+                        <i class="fab fa-linkedin-in mr-2"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="bg-gray-800 mt-12">
-        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-            <p class="text-center text-white text-sm">
-                &copy; 2023 Fana RK. All rights reserved.
-            </p>
+    <footer class="bg-gray-900 mt-12 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-white text-sm">
+                        &copy; 2023 Fana Rakotoasimbola. All rights reserved.
+                    </p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/fanama" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fanama/" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin-in fa-lg"></i>
+                    </a>
+                    <a href="mailto:f.rakotoasimbola@gmail.com" class="text-gray-400 hover:text-white">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
