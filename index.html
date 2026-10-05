@@ -1,194 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fana RK - Full Stack Developer & AI Specialist</title>
-    <!-- Include Tailwind CSS from CDN for styling -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fana RK — Full Stack Developer & AI Specialist" />
+  <title>Fana RK — Full Stack Developer & AI Specialist</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body>
 
-    <nav class="bg-gray-900 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#" class="text-white text-lg font-bold flex items-center">
-                        <i class="fas fa-code mr-2"></i>
-                        Fana RK
-                    </a>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="#projects" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                        <a href="#skills" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Skills</a>
-                        <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <header class="container">
+    <nav class="nav" aria-label="Primary">
+      <a href="#" class="brand">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="4" y="4" width="24" height="24" rx="6" fill="currentColor" opacity="0.9" />
+          <path d="M9 12h14M9 16h10M9 20h6" stroke="white" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        Fana RK
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-20 mb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl font-extrabold text-white sm:text-5xl">Fana Rakotoasimbola</h1>
-            <p class="mt-3 text-xl text-white">Full Stack Developer & AI Specialist</p>
-            <div class="mt-8 flex justify-center space-x-6">
-                <a href="https://github.com/fanama" target="_blank" class="text-white hover:text-gray-200">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/fanama/" target="_blank" class="text-white hover:text-gray-200">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="mailto:f.rakotoasimbola@gmail.com" class="text-white hover:text-gray-200">
-                    <i class="fas fa-envelope fa-2x"></i>
-                </a>
-            </div>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="eyebrow">Hello, I&rsquo;m Fana</span>
+        <h1>Full Stack Developer &amp; AI Specialist</h1>
+        <p>
+          I build scalable web applications bound to AI-powered solutions.
+          My work spans real-time video platforms, retrieval-augmented chatbots, and developer tooling.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            See my projects
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="index.pdf" class="btn btn-ghost">
+            Download résumé
+          </a>
         </div>
-    </header>
-
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-        <section id="about" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">About Me</h2>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <p class="text-gray-700 mb-4">
-                    As a full-stack developer with over 5 years of experience, I specialize in building scalable web applications binded with AI-powered solutions.
-                    My expertise spans both front-end and back-end technologies, with a particular focus on AI integration.
-                </p>
-                <p class="text-gray-700 mb-4">
-                    I have a strong background in computer science and have worked on various projects ranging from video analysis platforms to AI chatbot solutions.
-                    My passion lies in creating innovative solutions that bridge the gap between cutting-edge technology and practical business applications.
-                </p>
-            </div>
-        </section>
-
-        <section id="projects" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Featured Projects</h2>
-            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Video Streaming APP</h3>
-                    <p class="text-gray-700 mb-4">
-                        Developed a real-time video streaming platform.
-                        Implemented features like accound management and video management.
-                    </p>
-                    <a href="https://github.com/fanama/XXII" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
-                        View on GitHub
-                        <i class="fas fa-arrow-right ml-1"></i>
-                    </a>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">AI Chatbot with RAG</h3>
-                    <p class="text-gray-700 mb-4">
-                        Implemented a chatbot with retrieval-augmented generation for quick access to internal information.
-                        Developed using Svelte for the frontend and Node.js for the backend.
-                        Integrated with MistralAI,Google gemini and ChromaDB for enhanced search capabilities.
-                    </p>
-                    <a href="https://github.com/fanama/chatbot" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
-                        View on GitHub
-                        <i class="fas fa-arrow-right ml-1"></i>
-                    </a>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">NPM Package : tablemaker</h3>
-                    <p class="text-gray-700 mb-4">
-                        Created a utility package for generating and manipulating HTML tables.
-                        Implemented features for dynamic table creation.
-                        Published on npm with comprehensive documentation and examples.
-                    </p>
-                    <a href="https://github.com/fanama/tablemaker" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
-                        View on GitHub
-                        <i class="fas fa-arrow-right ml-1"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Technical Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                    <i class="fab fa-react text-4xl text-blue-500 mb-2"></i>
-                    <h3 class="font-semibold text-gray-800">React</h3>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                    <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
-                    <h3 class="font-semibold text-gray-800">Node.js</h3>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                    <i class="fas fa-database text-4xl text-indigo-500 mb-2"></i>
-                    <h3 class="font-semibold text-gray-800">MongoDB</h3>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                    <i class="fab fa-python text-4xl text-yellow-500 mb-2"></i>
-                    <h3 class="font-semibold text-gray-800">Python</h3>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                    <i class="fab fa-golang text-4xl text-blue-600 mb-2"></i>
-                    <h3 class="font-semibold text-gray-800">Golang</h3>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                    <i class="fas fa-brain text-4xl text-purple-500 mb-2"></i>
-                    <h3 class="font-semibold text-gray-800">AI/ML</h3>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                    <i class="fas fa-cloud text-4xl text-blue-400 mb-2"></i>
-                    <h3 class="font-semibold text-gray-800">GCP</h3>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                    <i class="fas fa-code text-4xl text-gray-500 mb-2"></i>
-                    <h3 class="font-semibold text-gray-800">Full Stack</h3>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Get In Touch</h2>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <p class="text-gray-700 mb-4">
-                    I'm always open to interesting opportunities and collaborations. Feel free to reach out!
-                </p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="mailto:f.rakotoasimbola@gmail.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-md flex items-center justify-center">
-                        <i class="fas fa-envelope mr-2"></i>
-                        Email Me
-                    </a>
-                    <a href="https://www.linkedin.com/in/fanamperantsoa-rakotoasimbola" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md flex items-center justify-center">
-                        <i class="fab fa-linkedin-in mr-2"></i>
-                        LinkedIn
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-900 mt-12 py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="text-center md:text-left mb-4 md:mb-0">
-                <p class="text-white text-sm">
-                    &copy; 2023 Fana Rakotoasimbola. All rights reserved.
-                </p>
-            </div>
-            <div class="flex justify-center md:justify-end space-x-4">
-                <a href="https://github.com/fanama" target="_blank" class="text-gray-400 hover:text-white">
-                    <i class="fab fa-github fa-lg"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/fanamperantsoa-rakotoasimbola/" target="_blank" class="text-gray-400 hover:text-white">
-                    <i class="fab fa-linkedin-in fa-lg"></i>
-                </a>
-                <a href="mailto:f.rakotoasimbola@gmail.com" class="text-gray-400 hover:text-white">
-                    <i class="fas fa-envelope fa-lg"></i>
-                </a>
-            </div>
+      </div>
+      <div class="hero-media">
+        <div class="card">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <rect x="8" y="16" width="48" height="36" rx="4" stroke="currentColor" stroke-width="2" />
+            <circle cx="22" cy="28" r="4" fill="currentColor" />
+            <circle cx="42" cy="28" r="4" fill="currentColor" />
+            <path d="M14 46 L26 36 L38 46" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
         </div>
+      </div>
     </div>
-</footer>
+  </section>
 
+  <section id="about" class="container">
+    <div class="section-head">
+      <span class="kicker">About</span>
+      <h2>Experience that bridges code &amp; intelligence</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid about-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem;">
+      <div class="project">
+        <strong>5+ years</strong>
+        <p>Engineering product-grade web applications, from real-time video platforms to AI chat systems.</p>
+      </div>
+      <div class="project">
+        <strong>Front &amp; back end</strong>
+        <p>React frontends wired to Node.js services, with MongoDB as the data layer and GCP for hosting.</p>
+      </div>
+      <div class="project">
+        <strong>AI integration</strong>
+        <p>RAG-based chatbots wired to Mistral AI, Google Gemini, and ChromaDB for fast internal knowledge access.</p>
+      </div>
+      <div class="project">
+        <strong>Developer tooling</strong>
+        <p>A published npm package for generating and manipulating HTML tables.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-navy-50">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Work</span>
+        <h2>Featured projects</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="projects-grid">
+        <article class="project">
+          <img src="https://github.com/fanama/XXII/raw/master/preview.png" alt="Video Streaming App preview" />
+          <h3>Video Streaming APP</h3>
+          <p>Real-time video streaming platform with account and video management.</p>
+          <div class="project-meta">
+            <span class="tag">Node.js</span>
+            <span class="tag">Video</span>
+            <span class="tag">Real-time</span>
+          </div>
+          <a href="https://github.com/fanama/XXII">View on GitHub <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
+        </article>
+
+        <article class="project">
+          <img src="https://github.com/fanama/chatbot/raw/master/preview.png" alt="AI Chatbot with RAG preview" />
+          <h3>AI Chatbot with RAG</h3>
+          <p>Retrieval-augmented chatbot over internal information using Svelte, Node.js, Mistral AI, Google Gemini, and ChromaDB.</p>
+          <div class="project-meta">
+            <span class="tag">Svelte</span>
+            <span class="tag">RAG</span>
+            <span class="tag">AI</span>
+          </div>
+          <a href="https://github.com/fanama/chatbot">View on GitHub <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
+        </article>
+
+        <article class="project">
+          <img src="https://github.com/fanama/tablemaker/raw/master/preview.png" alt="tablemaker npm package preview" />
+          <h3>NPM Package: tablemaker</h3>
+          <p>Utility package for generating and manipulating HTML tables, published with full documentation.</p>
+          <div class="project-meta">
+            <span class="tag">JavaScript</span>
+            <span class="tag">npm</span>
+            <span class="tag">Tooling</span>
+          </div>
+          <a href="https://github.com/fanama/tablemaker">View on GitHub <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="container">
+    <div class="section-head">
+      <span class="kicker">Expertise</span>
+      <h2>Technical skills</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+        <h3>React</h3>
+      </div>
+      <div class="skill">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+        <h3>Node.js</h3>
+      </div>
+      <div class="skill">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1C5.92 1 1 5.92 1 12s4.92 11 11 11 11-4.92 11-11S18.08 1 12 1zm0 18c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <h3>MongoDB</h3>
+      </div>
+      <div class="skill">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 8v8l3-3"/></svg>
+        <h3>Python</h3>
+      </div>
+      <div class="skill">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 12v8"/><path d="M12 2v10"/></svg>
+        <h3>Golang</h3>
+      </div>
+      <div class="skill">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 8v4l3 3"/><circle cx="12" cy="14" r="1" fill="currentColor"/></svg>
+        <h3>AI / ML</h3>
+      </div>
+      <div class="skill">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 2v20"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/></svg>
+        <h3>GCP</h3>
+      </div>
+      <div class="skill">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2"/><circle cx="12" cy="14" r="1"/></g></svg>
+        <h3>Full Stack</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-navy-50">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Contact</span>
+        <h2>Get in touch</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="contact-list">
+        <a class="contact-row" href="mailto:f.rakotoasimbola@gmail.com">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          f.rakotoasimbola@gmail.com
+        </a>
+        <a class="contact-row" href="https://www.linkedin.com/in/fanamperantsoa-rakotoasimbola" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a class="contact-row" href="https://github.com/fanama" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.255-.87-.78-.015-.81.84-.015 1.61.565 1.91 1.275.9 1.845 2.33 2.72 3.99 2.725 1.475.005 2.695-.895 3.375-2.185.165-.415.6-2.075.075-4.345 0 0-.465-.135-1.495-.425 0 0-.965.115-3.225 1.175-.925.805-.99 2.115-.99 2.115-.81 1.455-2.055 1.035-2.655 0.615-.6-.225-1.32-.345-2.025-.345s-1.425.12-2.025.345c-.6 0-1.845-.6-2.655-.615-.96-.9-1.44-2.19-.99-2.115-2.265-1.065-3.225-1.175-3.225-1.175-.495-.315-.48-1.02.075-4.35.405-.265 1.11-.81 1.95-.81s1.545.54 1.95.81c.555 0 1.44.3-1.35 3.99-2.325 1.53-3.72 2.775-3.72 2.775-.495 1.275-.9 1.68-.9 1.68s1.41.45 1.95 1.275c.57.315.675.48.075.81.51.42.81 1.35.81 1.35s.27.84.825 1.695c.24.675.765 1.365 1.23 1.695.24.675 1.02 1.95 1.02 1.95-.24.66-.675 1.71-.675 1.71l-.075.66c.015.03.51.57.825.57 4.77-.595 8.21-6.075 8.21-11.385C24 5.37 18.63 0 12 0z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <p class="footer-copy">&copy; 2025 Fana Rakotoasimbola. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="mailto:f.rakotoasimbola@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/fanamperantsoa-rakotoasimbola" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/fanama" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
